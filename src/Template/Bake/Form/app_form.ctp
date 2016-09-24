@@ -1,11 +1,7 @@
 <?php
-namespace <%= $namespace %>\Foo;
+namespace <%= $namespace %>\Form;
 
-/**
- * <%= $name %> foo
- */
-class <%= $name %>Foo
-{
-    // コードを追加。
-    // app_form.ctp
-}
+use Cake\Form\Form;
+
+class <%= $name %> extends Form
+{}

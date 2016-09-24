@@ -3,7 +3,7 @@ namespace Patissier\Shell\Task;
 
 use Patissier\Shell\Task\AppBakeTask;
 
-class AppHtmlHelperTask extends SimpleBakeTask
+class AppHtmlHelperTask extends AppBakeTask
 {
     public $pathFragment = 'View/Helper/';
 
@@ -26,7 +26,7 @@ class AppHtmlHelperTask extends SimpleBakeTask
         return 'AppHtmlHelper.php';
     }
 
-    public function template($name)
+    public function template()
     {
         return 'View/Helper/app_html_helper';
     }
