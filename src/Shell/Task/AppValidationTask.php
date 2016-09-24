@@ -7,6 +7,15 @@ class AppValidationTask extends AppBakeTask
 {
     public $pathFragment = 'Validation/';
 
+    /**
+     * Execute method
+     */
+    public function main($name = null)
+    {
+        $name = 'app_validation';
+        parent::main($name);
+    }
+
     public function name()
     {
         return 'app_validation';

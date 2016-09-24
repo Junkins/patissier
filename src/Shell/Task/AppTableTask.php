@@ -7,6 +7,15 @@ class AppTableTask extends AppBakeTask
 {
     public $pathFragment = 'Model/Table/';
 
+    /**
+     * Execute method
+     */
+    public function main($name = null)
+    {
+        $name = 'app_table';
+        parent::main($name);
+    }
+
     public function name()
     {
         return 'app_table';

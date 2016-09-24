@@ -7,6 +7,15 @@ class AppControllerTask extends AppBakeTask
 {
     public $pathFragment = 'Controller/';
 
+    /**
+     * Execute method
+     */
+    public function main($name = null)
+    {
+        $name = 'app_controller';
+        parent::main($name);
+    }
+
     public function name()
     {
         return 'app_controller';

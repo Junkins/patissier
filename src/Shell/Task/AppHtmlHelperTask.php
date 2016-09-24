@@ -3,31 +3,31 @@ namespace Patissier\Shell\Task;
 
 use Patissier\Shell\Task\AppBakeTask;
 
-class AppViewTask extends AppBakeTask
+class AppHtmlHelperTask extends SimpleBakeTask
 {
-    public $pathFragment = 'View/';
+    public $pathFragment = 'View/Helper/';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'app_view';
+        $name = 'app_html_helper';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'app_view';
+        return 'app_html_helper';
     }
 
     public function fileName($name)
     {
-        return 'AppView.php';
+        return 'AppHtmlHelper.php';
     }
 
-    public function template()
+    public function template($name)
     {
-        return 'app_view';
+        return 'View/Helper/app_html_helper';
     }
 }

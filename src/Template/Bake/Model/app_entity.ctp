@@ -1,11 +1,10 @@
 <?php
-namespace <%= $namespace %>\Foo;
+namespace <%= $namespace %>\Model\Entity;
+
+use Cake\ORM\Entity;
 
 /**
- * <%= $name %> foo
+ * <%= $name %>
  */
-class <%= $name %>Foo
-{
-    // コードを追加。
-    // app_entity.ctp
-}
+class <%= $name %> extends Entity
+{}

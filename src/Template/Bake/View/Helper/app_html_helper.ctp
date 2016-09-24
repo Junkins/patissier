@@ -7,5 +7,5 @@ namespace <%= $namespace %>\Foo;
 class <%= $name %>Foo
 {
     // コードを追加。
-    'OK'
+    // app_html_helper.ctp
 }
