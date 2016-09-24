@@ -14,9 +14,7 @@ class AppFormTask extends AppBakeTask
 
     public function fileName($name)
     {
-        // AppForm.php
-        $name = 'Form';
-        return parent::fileName($name);
+        return 'AppForm.php';
     }
 
     public function template()

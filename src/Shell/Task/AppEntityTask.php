@@ -14,9 +14,7 @@ class AppEntityTask extends AppBakeTask
 
     public function fileName($name)
     {
-        // AppEntity.php
-        $name = 'Entity';
-        return parent::fileName($name);
+        return 'AppEntity.php';
     }
 
     public function template()

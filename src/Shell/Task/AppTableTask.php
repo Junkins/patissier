@@ -14,9 +14,7 @@ class AppTableTask extends AppBakeTask
 
     public function fileName($name)
     {
-        // AppTable.php
-        $name = 'Table';
-        return parent::fileName($name);
+        return 'AppTable.php';
     }
 
     public function template()

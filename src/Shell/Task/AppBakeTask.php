@@ -8,7 +8,6 @@ use Bake\Shell\Task\SimpleBakeTask;
  */
 class AppBakeTask extends SimpleBakeTask
 {
-
     /**
      * Execute method
      */
@@ -18,13 +17,9 @@ class AppBakeTask extends SimpleBakeTask
         parent::main($name);
     }
 
-    public function name()
-    {
-        return 'app';
-    }
+    public function name(){}
 
-    public function fileName($name)
-    {
-        return  'App' . $name . '.php';
-    }
+    public function fileName($name){}
+
+    public function template(){}
 }

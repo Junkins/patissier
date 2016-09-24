@@ -14,9 +14,7 @@ class AppTypeTask extends AppBakeTask
 
     public function fileName($name)
     {
-        // AppType.php
-        $name = 'Type';
-        return parent::fileName($name);
+        return 'AppType.php';
     }
 
     public function template()

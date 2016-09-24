@@ -14,9 +14,7 @@ class AppValidationTask extends AppBakeTask
 
     public function fileName($name)
     {
-        // AppValidation.php
-        $name = 'Validation';
-        return parent::fileName($name);
+        return 'AppValidation.php';
     }
 
     public function template()

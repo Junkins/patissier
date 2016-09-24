@@ -14,9 +14,7 @@ class AppControllerTask extends AppBakeTask
 
     public function fileName($name)
     {
-        // AppController.php
-        $name = 'Controller';
-        return parent::fileName($name);
+        return 'AppController.php';
     }
 
     public function template()

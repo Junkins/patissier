@@ -14,9 +14,7 @@ class AppViewTask extends AppBakeTask
 
     public function fileName($name)
     {
-        // AppView.php
-        $name = 'View';
-        return parent::fileName($name);
+        return 'AppView.php';
     }
 
     public function template()
