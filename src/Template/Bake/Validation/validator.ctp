@@ -7,5 +7,5 @@ namespace <%= $namespace %>\Foo;
 class <%= $name %>Foo
 {
     // コードを追加。
-    // validation.ctp
+    // validator.ctp
 }
