@@ -28,6 +28,9 @@ class AppPatissierShell extends BakeShell
      */
     public function main()
     {
+        // テーマの指定
+        $this->params['theme'] = 'Patissier';
+
         $this->AppController->main();
         $this->AppEntity->main();
         $this->AppForm->main();

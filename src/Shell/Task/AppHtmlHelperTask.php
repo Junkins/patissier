@@ -1,9 +1,9 @@
 <?php
 namespace Patissier\Shell\Task;
 
-use Patissier\Shell\Task\AppBakeTask;
+use Bake\Shell\Task\SimpleBakeTask;
 
-class AppHtmlHelperTask extends AppBakeTask
+class AppHtmlHelperTask extends SimpleBakeTask
 {
     public $pathFragment = 'View/Helper/';
 
