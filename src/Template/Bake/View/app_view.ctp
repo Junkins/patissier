@@ -22,7 +22,7 @@ class <%= $name %> extends View
             'className' => 'AppUrl',
         ]);
 
-        $this->loadHelper('Paginator'], [
+        $this->loadHelper('Paginator', [
             'className' => 'AppPaginator',
         ]);
     }

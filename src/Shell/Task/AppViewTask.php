@@ -28,6 +28,6 @@ class AppViewTask extends AppBakeTask
 
     public function template()
     {
-        return 'app_view';
+        return 'View/app_view';
     }
 }

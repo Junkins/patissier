@@ -1,11 +1,7 @@
 <?php
-namespace <%= $namespace %>\Foo;
+namespace <%= $namespace %>\Validation;
 
-/**
- * <%= $name %> foo
- */
-class <%= $name %>Foo
-{
-    // コードを追加。
-    // validator.ctp
-}
+use <%= $namespace %>\Validation\AppValidator;
+
+class <%= $name %> extends AppValidator
+{}

@@ -17,8 +17,9 @@ class AppPatissierShell extends BakeShell
         'Patissier.AppValidator',
         'Patissier.AppView',
         'Patissier.AppFormHelper',
-        // 'Patissier.AppHtmlHelper',
-        // 'Patissier.AppUrlHelper'
+        'Patissier.AppHtmlHelper',
+        'Patissier.AppUrlHelper',
+        'Patissier.AppPaginatorHelper'
     ];
 
     /**
@@ -36,8 +37,9 @@ class AppPatissierShell extends BakeShell
         $this->AppValidator->main();
         $this->AppView->main();
         $this->AppFormHelper->main();
-        // $this->AppHtmlHelper->main();
-        // $this->AppUrlHelper->main();
+        $this->AppHtmlHelper->main();
+        $this->AppUrlHelper->main();
+        $this->AppPaginatorHelper->main();
     }
 
 }
