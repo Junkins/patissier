@@ -16,14 +16,11 @@ class AppMigrationTask extends MigrationTask
     public function main($name = null)
     {
         // 基盤になるMigrationファイルの名前を固定
-        // 「初期構築」の意
+        //「初期構築」の意
         $name = 'initial_construction';
         parent::main($name);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     public function template()
     {
         return 'Patissier.config/skeleton';
