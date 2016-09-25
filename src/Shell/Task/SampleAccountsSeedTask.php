@@ -26,14 +26,15 @@ class SampleAccountsSeedTask extends AppSeedTask
     {
         $this->table = 'accounts';
         // (注) 文字列として定義する
+        $date = date('Y-m-d H:i:s');
         $this->records = "[
             [
                 'name'            => 'AccountA',
                 'description'     => '',
                 'username'        => 'admin',
                 'password'        => 'sample',
-                'created'         => date('Y-m-d H:i:s'),
-                'modified'        => date('Y-m-d H:i:s'),
+                'created'         => '$date',
+                'modified'        => '$date',
             ]
         ]";
         return parent::templateData();
