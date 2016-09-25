@@ -1,7 +1,7 @@
 <?php
 namespace <%= $namespace %>\View\Helper;
 
-use Cake\View\Helper;
+use Cake\View\Helper\HtmlHelper;
 
-class <%= $name %> extends Helper
+class <%= $name %> extends HtmlHelper
 {}

@@ -1,9 +1,9 @@
 <?php
 namespace <%= $namespace %>\View\Helper;
 
-use Cake\View\Helper;
+use Cake\View\Helper\FormHelper;
 
-class <%= $name %> extends Helper
+class <%= $name %> extends FormHelper
 {
     /**
      * create

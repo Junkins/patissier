@@ -1,7 +1,7 @@
 <?php
 namespace <%= $namespace %>\View\Helper;
 
-use Cake\View\Helper;
+use Cake\View\Helper\PaginatorHelper;
 
-class <%= $name %> extends Helper
+class <%= $name %> extends PaginatorHelper
 {}
