@@ -1,11 +1,7 @@
 <?php
-namespace <%= $namespace %>\Foo;
+namespace <%= $namespace %>\Database;
 
-/**
- * <%= $name %> foo
- */
-class <%= $name %>Foo
-{
-    // コードを追加。
-    // app_type.ctp
-}
+use Cake\Database\Type;
+
+class <%= $name %> extends Type
+{}

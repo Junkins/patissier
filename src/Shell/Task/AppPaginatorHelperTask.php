@@ -3,7 +3,7 @@ namespace Patissier\Shell\Task;
 
 use Bake\Shell\Task\SimpleBakeTask;
 
-class AppFormHelperTask extends SimpleBakeTask
+class AppPaginatorHelperTask extends SimpleBakeTask
 {
     public $pathFragment = 'View/Helper/';
 
@@ -12,22 +12,22 @@ class AppFormHelperTask extends SimpleBakeTask
      */
     public function main($name = null)
     {
-        $name = 'app_form_helper';
+        $name = 'app_paginator_helper';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'app_form_helper';
+        return 'app_paginator_helper';
     }
 
     public function fileName($name)
     {
-        return 'AppFormHelper.php';
+        return 'AppPaginatorHelper.php';
     }
 
     public function template()
     {
-        return 'View/Helper/app_form_helper';
+        return 'View/Helper/app_paginator_helper';
     }
 }

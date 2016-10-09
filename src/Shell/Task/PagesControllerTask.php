@@ -3,31 +3,31 @@ namespace Patissier\Shell\Task;
 
 use Bake\Shell\Task\SimpleBakeTask;
 
-class AppFormHelperTask extends SimpleBakeTask
+class PagesControllerTask extends SimpleBakeTask
 {
-    public $pathFragment = 'View/Helper/';
+    public $pathFragment = 'Controller/';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'app_form_helper';
+        $name = 'pages_controller';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'app_form_helper';
+        return 'pages_controller';
     }
 
     public function fileName($name)
     {
-        return 'AppFormHelper.php';
+        return 'PagesController.php';
     }
 
     public function template()
     {
-        return 'View/Helper/app_form_helper';
+        return 'Controller/pages_controller';
     }
 }

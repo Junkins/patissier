@@ -18,7 +18,8 @@ class AppPatissierShell extends BakeShell
         'Patissier.AppView',
         'Patissier.AppFormHelper',
         'Patissier.AppHtmlHelper',
-        'Patissier.AppUrlHelper'
+        'Patissier.AppUrlHelper',
+        'Patissier.AppPaginatorHelper'
     ];
 
     /**
@@ -27,6 +28,9 @@ class AppPatissierShell extends BakeShell
      */
     public function main()
     {
+        // テーマの指定
+        $this->params['theme'] = 'Patissier';
+
         $this->AppController->main();
         $this->AppEntity->main();
         $this->AppForm->main();
@@ -38,6 +42,7 @@ class AppPatissierShell extends BakeShell
         $this->AppFormHelper->main();
         $this->AppHtmlHelper->main();
         $this->AppUrlHelper->main();
+        $this->AppPaginatorHelper->main();
     }
 
 }

@@ -1,11 +1,18 @@
 <?php
-namespace <%= $namespace %>\Foo;
+namespace <%= $namespace %>\Controller;
 
-/**
- * <%= $name %> foo
- */
-class <%= $name %>Foo
+use Cake\Controller\Controller;
+use Cake\Event\Event;
+use Cake\Routing\Router;
+
+class <%= $name %> extends Controller
 {
-    // コードを追加。
-    // app_controller.ctp
+    public function initialize()
+    {
+        parent::initialize();
+
+        // Load Components
+        $this->loadComponent('Flash');
+        $this->loadComponent('RequestHandler');
+    }
 }

@@ -1,9 +1,9 @@
 <?php
 namespace Patissier\Shell\Task;
 
-use Patissier\Shell\Task\AppBakeTask;
+use Bake\Shell\Task\SimpleBakeTask;
 
-class AppTypeTask extends AppBakeTask
+class AppTypeTask extends SimpleBakeTask
 {
     public $pathFragment = 'Database/Type/';
 

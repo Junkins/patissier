@@ -1,11 +1,7 @@
 <?php
-namespace <%= $namespace %>\Foo;
+namespace <%= $namespace %>\View\Helper;
 
-/**
- * <%= $name %> foo
- */
-class <%= $name %>Foo
-{
-    // コードを追加。
-    // app_html_helper.ctp
-}
+use Cake\View\Helper\HtmlHelper;
+
+class <%= $name %> extends HtmlHelper
+{}

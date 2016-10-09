@@ -1,9 +1,9 @@
 <?php
 namespace Patissier\Shell\Task;
 
-use Patissier\Shell\Task\AppBakeTask;
+use Bake\Shell\Task\SimpleBakeTask;
 
-class AppValidatorTask extends AppBakeTask
+class AppValidatorTask extends SimpleBakeTask
 {
     public $pathFragment = 'Validation/';
 

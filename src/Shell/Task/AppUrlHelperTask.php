@@ -1,7 +1,7 @@
 <?php
 namespace Patissier\Shell\Task;
 
-use Patissier\Shell\Task\AppBakeTask;
+use Bake\Shell\Task\SimpleBakeTask;
 
 class AppUrlHelperTask extends SimpleBakeTask
 {
@@ -26,7 +26,7 @@ class AppUrlHelperTask extends SimpleBakeTask
         return 'AppUrlHelper.php';
     }
 
-    public function template($name)
+    public function template()
     {
         return 'View/Helper/app_url_helper';
     }

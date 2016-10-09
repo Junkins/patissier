@@ -1,11 +1,29 @@
 <?php
-namespace <%= $namespace %>\Foo;
+namespace <%= $namespace %>\View;
 
-/**
- * <%= $name %> foo
- */
-class <%= $name %>Foo
+use Cake\View\View;
+
+class <%= $name %> extends View
 {
-    // コードを追加。
-    // app_view.ctp
+    public function initialize()
+    {
+        parent::initialize();
+
+        // Load Helpers
+        $this->loadHelper('Form', [
+            'className' => 'AppForm',
+        ]);
+
+        $this->loadHelper('Html', [
+            'className' => 'AppHtml',
+        ]);
+
+        $this->loadHelper('Url', [
+            'className' => 'AppUrl',
+        ]);
+
+        $this->loadHelper('Paginator', [
+            'className' => 'AppPaginator',
+        ]);
+    }
 }
