@@ -1,9 +1,9 @@
 <?php
 namespace Patissier\Shell\Task;
 
-use Patissier\Shell\Task\AppTemplateTask;
+use Patissier\Shell\Task\Core\CoreTemplateTask;
 
-class PagesTemplateTask extends AppTemplateTask
+class PagesTemplateTask extends CoreTemplateTask
 {
     /**
      * $scaffoldActions
