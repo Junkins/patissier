@@ -28,6 +28,6 @@ class AppControllerTask extends SimpleBakeTask
 
     public function template()
     {
-        return 'Controller/app_controller';
+        return 'Wrapper/Controller/app_controller';
     }
 }
