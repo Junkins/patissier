@@ -10,6 +10,16 @@ use Migrations\Util\ColumnParser;
  */
 class CoreMigrationTask extends MigrationTask
 {
+    /**
+     * Tasks to be loaded by this Task
+     *
+     * @var array
+     */
+    public $tasks = [
+        'Patissier.SmapleBakeTemplate',
+        'Patissier.CommonBakeTemplate',
+        'Bake.Test'
+    ];
 
     protected $blueprint = [];
 
@@ -22,6 +32,13 @@ class CoreMigrationTask extends MigrationTask
         //「初期構築」の意
         $name = 'initial_construction';
         parent::main($name);
+    }
+
+    // BackTemplateClassの上書き
+    public function bake($name)
+    {
+        $this->BakeTemplate = $this->CommonBakeTemplate;
+        parent::bake($name);
     }
 
     public function template()
