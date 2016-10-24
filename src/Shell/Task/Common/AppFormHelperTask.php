@@ -1,9 +1,9 @@
 <?php
 namespace Patissier\Shell\Task\Common;
 
-use Bake\Shell\Task\SimpleBakeTask;
+use Patissier\Shell\Task\CoreBakeTask;
 
-class AppFormHelperTask extends SimpleBakeTask
+class AppFormHelperTask extends CoreBakeTask
 {
     public $pathFragment = 'View/Helper/';
 
@@ -28,6 +28,6 @@ class AppFormHelperTask extends SimpleBakeTask
 
     public function template()
     {
-        return 'View/Helper/app_form_helper';
+        return 'Patissier.View/Helper/app_form_helper';
     }
 }

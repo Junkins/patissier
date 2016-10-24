@@ -1,6 +1,7 @@
 <?php
 namespace Patissier\Shell\Task;
 
+use Patissier\Shell\Task\Traits\ChangeBakeTemplateTrait;
 use Cake\Core\Configure;
 use Migrations\Shell\Task\MigrationTask;
 use Migrations\Util\ColumnParser;
@@ -10,17 +11,15 @@ use Migrations\Util\ColumnParser;
  */
 class CoreMigrationTask extends MigrationTask
 {
-    /**
-     * Tasks to be loaded by this Task
-     *
-     * @var array
-     */
+    use ChangeBakeTemplateTrait;
     public $tasks = [
         'Patissier.SmapleBakeTemplate',
         'Patissier.CommonBakeTemplate',
-        'Bake.Test'
     ];
 
+   /**
+    * $blueprint description
+    */
     protected $blueprint = [];
 
     /**

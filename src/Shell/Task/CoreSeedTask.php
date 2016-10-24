@@ -1,6 +1,7 @@
 <?php
 namespace Patissier\Shell\Task;
 
+use Patissier\Shell\Task\Traits\ChangeBakeTemplateTrait;
 use Cake\Console\ConsoleOptionParser;
 use Cake\Core\Configure;
 use Cake\Core\Plugin;
@@ -12,27 +13,19 @@ use Migrations\Shell\Task\SeedTask;
  */
 class CoreSeedTask extends SeedTask
 {
- /**
-     * Tasks to be loaded by this Task
-     *
-     * @var array
-     */
+    use ChangeBakeTemplateTrait;
     public $tasks = [
         'Patissier.SmapleBakeTemplate',
         'Patissier.CommonBakeTemplate',
-        'Bake.Test'
     ];
 
+    /**
+     * template
+     * @author ito
+     */
     public function template()
     {
         return 'Patissier.Seed/seed';
-    }
-
-    // BackTemplateClassの上書き
-    public function bake($name)
-    {
-        $this->BakeTemplate = $this->CommonBakeTemplate;
-        parent::bake($name);
     }
 
     /**

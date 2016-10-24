@@ -1,9 +1,9 @@
 <?php
 namespace Patissier\Shell\Task\Common;
 
-use Bake\Shell\Task\SimpleBakeTask;
+use Patissier\Shell\Task\CoreBakeTask;
 
-class AppValidatorTask extends SimpleBakeTask
+class AppValidatorTask extends CoreBakeTask
 {
     public $pathFragment = 'Validation/';
 
@@ -28,6 +28,6 @@ class AppValidatorTask extends SimpleBakeTask
 
     public function template()
     {
-        return 'Validation/app_validator';
+        return 'Patissier.Validation/app_validator';
     }
 }

@@ -10,3 +10,4 @@ bin/cake sample_app_patissier sample_tasks_seed
 # シード実行
 bin/cake migrations seed
 # APPファイルの作成
+bin/cake common_patissier -f

@@ -1,9 +1,9 @@
 <?php
 namespace Patissier\Shell\Task\Common;
 
-use Bake\Shell\Task\SimpleBakeTask;
+use Patissier\Shell\Task\CoreBakeTask;
 
-class AppPaginatorHelperTask extends SimpleBakeTask
+class AppPaginatorHelperTask extends CoreBakeTask
 {
     public $pathFragment = 'View/Helper/';
 
@@ -28,6 +28,6 @@ class AppPaginatorHelperTask extends SimpleBakeTask
 
     public function template()
     {
-        return 'View/Helper/app_paginator_helper';
+        return 'Patissier.View/Helper/app_paginator_helper';
     }
 }

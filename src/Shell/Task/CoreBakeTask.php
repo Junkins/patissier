@@ -1,6 +1,7 @@
 <?php
 namespace Patissier\Shell\Task;
 
+use Patissier\Shell\Task\Traits\ChangeBakeTemplateTrait;
 use Bake\Shell\Task\SimpleBakeTask;
 
 /**
@@ -8,6 +9,12 @@ use Bake\Shell\Task\SimpleBakeTask;
  */
 class CoreBakeTask extends SimpleBakeTask
 {
+    use ChangeBakeTemplateTrait;
+    public $tasks = [
+        'Patissier.SmapleBakeTemplate',
+        'Patissier.CommonBakeTemplate',
+    ];
+
     public function name(){}
 
     public function fileName($name){}
