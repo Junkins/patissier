@@ -5,7 +5,7 @@ use Patissier\Shell\Task\CoreBakeTask;
 
 class GitIgnoreTask extends CoreBakeTask
 {
-    public $pathFragment = '';
+    public $pathFragment = '../';
 
     /**
      * Execute method

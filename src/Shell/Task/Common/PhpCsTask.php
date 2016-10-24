@@ -5,7 +5,7 @@ use Patissier\Shell\Task\CoreBakeTask;
 
 class PhpCsTask extends CoreBakeTask
 {
-    public $pathFragment = '';
+    public $pathFragment = '../';
 
     /**
      * Execute method

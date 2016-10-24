@@ -5,7 +5,7 @@ use Patissier\Shell\Task\CoreBakeTask;
 
 class ComposerJsonTask extends CoreBakeTask
 {
-    public $pathFragment = '';
+    public $pathFragment = '../';
 
     /**
      * Execute method

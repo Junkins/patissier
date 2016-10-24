@@ -3,7 +3,7 @@ namespace Patissier\Shell\Task\Common;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class TimeFormatConfigTaskTask extends CoreBakeTask
+class TimeFormatConfigTask extends CoreBakeTask
 {
     public $pathFragment = 'config/';
 

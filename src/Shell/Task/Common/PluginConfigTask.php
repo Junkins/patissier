@@ -3,7 +3,7 @@ namespace Patissier\Shell\Task\Common;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class PluginConfigTaskTask extends CoreBakeTask
+class PluginConfigTask extends CoreBakeTask
 {
     public $pathFragment = 'config/';
 
