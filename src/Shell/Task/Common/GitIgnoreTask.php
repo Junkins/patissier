@@ -3,31 +3,31 @@ namespace Patissier\Shell\Task\Common;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class AppEntityTask extends CoreBakeTask
+class GitIgnoreTask extends CoreBakeTask
 {
-    public $pathFragment = 'Model/Entity/';
+    public $pathFragment = '';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'app_entity';
+        $name = 'git_ignore';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'app_entity';
+        return 'git_ignore';
     }
 
     public function fileName($name)
     {
-        return 'AppEntity.php';
+        return '.gitignore';
     }
 
     public function template()
     {
-        return 'Patissier.Model/Entity/app_entity';
+        return 'Patissier.git_ignore';
     }
 }

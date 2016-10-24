@@ -3,31 +3,31 @@ namespace Patissier\Shell\Task\Common;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class AppEntityTask extends CoreBakeTask
+class BowerJsonTask extends CoreBakeTask
 {
-    public $pathFragment = 'Model/Entity/';
+    public $pathFragment = '';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'app_entity';
+        $name = 'bower_json';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'app_entity';
+        return 'bower_json';
     }
 
     public function fileName($name)
     {
-        return 'AppEntity.php';
+        return 'bower.json';
     }
 
     public function template()
     {
-        return 'Patissier.Model/Entity/app_entity';
+        return 'Patissier.bower_json';
     }
 }

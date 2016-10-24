@@ -3,31 +3,31 @@ namespace Patissier\Shell\Task\Common;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class AppEntityTask extends CoreBakeTask
+class HumanInfoEntityTraitTask extends CoreBakeTask
 {
-    public $pathFragment = 'Model/Entity/';
+    public $pathFragment = 'Model/Entity/Traits/';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'app_entity';
+        $name = 'human_info_entity_trait';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'app_entity';
+        return 'human_info_entity_trait';
     }
 
     public function fileName($name)
     {
-        return 'AppEntity.php';
+        return 'HumanInfoEntityTrait.php';
     }
 
     public function template()
     {
-        return 'Patissier.Model/Entity/app_entity';
+        return 'Patissier.Model/Entity/Traits/human_info_entity_trait';
     }
 }

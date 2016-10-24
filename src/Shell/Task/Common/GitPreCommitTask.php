@@ -3,31 +3,31 @@ namespace Patissier\Shell\Task\Common;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class AppEntityTask extends CoreBakeTask
+class GitPreCommitTask extends CoreBakeTask
 {
-    public $pathFragment = 'Model/Entity/';
+    public $pathFragment = '';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'app_entity';
+        $name = 'git_pre_commit';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'app_entity';
+        return 'git_pre_commit';
     }
 
     public function fileName($name)
     {
-        return 'AppEntity.php';
+        return 'git-pre-commit';
     }
 
     public function template()
     {
-        return 'Patissier.Model/Entity/app_entity';
+        return 'Patissier.git_pre_commit';
     }
 }

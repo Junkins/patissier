@@ -3,31 +3,31 @@ namespace Patissier\Shell\Task\Common;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class AppEntityTask extends CoreBakeTask
+class CommonFormTraitTask extends CoreBakeTask
 {
-    public $pathFragment = 'Model/Entity/';
+    public $pathFragment = 'Form/Traits/';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'app_entity';
+        $name = 'common_form_trait';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'app_entity';
+        return 'common_form_trait';
     }
 
     public function fileName($name)
     {
-        return 'AppEntity.php';
+        return 'CommonFormTrait.php';
     }
 
     public function template()
     {
-        return 'Patissier.Model/Entity/app_entity';
+        return 'Patissier.Form/Traits/common_form_trait';
     }
 }
