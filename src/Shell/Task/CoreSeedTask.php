@@ -1,5 +1,5 @@
 <?php
-namespace Patissier\Shell\Task\Core;
+namespace Patissier\Shell\Task;
 
 use Cake\Console\ConsoleOptionParser;
 use Cake\Core\Configure;
@@ -12,9 +12,27 @@ use Migrations\Shell\Task\SeedTask;
  */
 class CoreSeedTask extends SeedTask
 {
+ /**
+     * Tasks to be loaded by this Task
+     *
+     * @var array
+     */
+    public $tasks = [
+        'Patissier.SmapleBakeTemplate',
+        'Patissier.CommonBakeTemplate',
+        'Bake.Test'
+    ];
+
     public function template()
     {
         return 'Patissier.Seed/seed';
+    }
+
+    // BackTemplateClassの上書き
+    public function bake($name)
+    {
+        $this->BakeTemplate = $this->CommonBakeTemplate;
+        parent::bake($name);
     }
 
     /**

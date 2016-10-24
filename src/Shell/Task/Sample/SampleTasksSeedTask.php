@@ -1,7 +1,7 @@
 <?php
 namespace Patissier\Shell\Task\Sample;
 
-use Patissier\Shell\Task\Core\CoreSeedTask;
+use Patissier\Shell\Task\CoreSeedTask;
 
 /**
  * Task for the wrapper creation of Seed Files

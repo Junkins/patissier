@@ -1,33 +1,33 @@
 <?php
-namespace Patissier\Shell\Task\Wrapper;
+namespace Patissier\Shell\Task\Common;
 
 use Bake\Shell\Task\SimpleBakeTask;
 
-class AppFormTask extends SimpleBakeTask
+class AppEntityTask extends SimpleBakeTask
 {
-    public $pathFragment = 'Model/Form/';
+    public $pathFragment = 'Model/Entity/';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'app_form';
+        $name = 'app_entity';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'app_form';
+        return 'app_entity';
     }
 
     public function fileName($name)
     {
-        return 'AppForm.php';
+        return 'AppEntity.php';
     }
 
     public function template()
     {
-        return 'Model/app_form';
+        return 'Model/app_entity';
     }
 }

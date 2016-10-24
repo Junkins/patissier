@@ -1,33 +1,33 @@
 <?php
-namespace Patissier\Shell\Task\Wrapper;
+namespace Patissier\Shell\Task\Common;
 
 use Bake\Shell\Task\SimpleBakeTask;
 
-class AppHtmlHelperTask extends SimpleBakeTask
+class AppTableTask extends SimpleBakeTask
 {
-    public $pathFragment = 'View/Helper/';
+    public $pathFragment = 'Model/Table/';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'app_html_helper';
+        $name = 'app_table';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'app_html_helper';
+        return 'app_table';
     }
 
     public function fileName($name)
     {
-        return 'AppHtmlHelper.php';
+        return 'AppTable.php';
     }
 
     public function template()
     {
-        return 'View/Helper/app_html_helper';
+        return 'Model/app_table';
     }
 }

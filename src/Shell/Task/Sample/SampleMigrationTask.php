@@ -1,7 +1,7 @@
 <?php
 namespace Patissier\Shell\Task\Sample;
 
-use Patissier\Shell\Task\Core\CoreMigrationTask;
+use Patissier\Shell\Task\CoreMigrationTask;
 
 /**
  * Task for the wrapper creation of Migration Files

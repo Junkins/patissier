@@ -1,7 +1,7 @@
 <?php
 namespace Patissier\Shell\Task;
 
-use Patissier\Shell\Task\Core\CoreTemplateTask;
+use Patissier\Shell\Task\CoreTemplateTask;
 
 class PagesTemplateTask extends CoreTemplateTask
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Patissier\Shell\Task\Core;
+namespace Patissier\Shell\Task;
 
 use Cake\Core\Configure;
 use Migrations\Shell\Task\MigrationTask;
