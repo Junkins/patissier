@@ -3,31 +3,31 @@ namespace Patissier\Shell\Task\Common;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class AppEntityTask extends CoreBakeTask
+class FindIgnoreBehaviorTask extends CoreBakeTask
 {
-    public $pathFragment = 'Model/Entity/';
+    public $pathFragment = 'Model/Behavior/';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'app_entity';
+        $name = 'find_ignore_behavior';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'app_entity';
+        return 'find_ignore_behavior';
     }
 
     public function fileName($name)
     {
-        return 'AppEntity.php';
+        return 'FindIgnoreBehavior.php';
     }
 
     public function template()
     {
-        return 'Patissier.Model/Entity/app_entity';
+        return 'Patissier.Model/Behavior/find_ignore_behavior';
     }
 }

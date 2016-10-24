@@ -3,31 +3,31 @@ namespace Patissier\Shell\Task\Common;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class AppEntityTask extends CoreBakeTask
+class PaginatorQueryTraitTask extends CoreBakeTask
 {
-    public $pathFragment = 'Model/Entity/';
+    public $pathFragment = 'ORM/Traits/';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'app_entity';
+        $name = 'paginator_query_trait';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'app_entity';
+        return 'paginator_query_trait';
     }
 
     public function fileName($name)
     {
-        return 'AppEntity.php';
+        return 'PaginatorQueryTrait.php';
     }
 
     public function template()
     {
-        return 'Patissier.Model/Entity/app_entity';
+        return 'Patissier.ORM/paginator_query_trait';
     }
 }

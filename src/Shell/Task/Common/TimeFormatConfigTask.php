@@ -3,31 +3,31 @@ namespace Patissier\Shell\Task\Common;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class AppEntityTask extends CoreBakeTask
+class TimeFormatConfigTask extends CoreBakeTask
 {
-    public $pathFragment = 'Model/Entity/';
+    public $pathFragment = 'config/';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'app_entity';
+        $name = 'time_format_config';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'app_entity';
+        return 'time_format_config';
     }
 
     public function fileName($name)
     {
-        return 'AppEntity.php';
+        return 'time_format_config.php';
     }
 
     public function template()
     {
-        return 'Patissier.Model/Entity/app_entity';
+        return 'Patissier.config/time_format_config';
     }
 }

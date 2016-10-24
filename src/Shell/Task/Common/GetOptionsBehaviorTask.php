@@ -3,31 +3,31 @@ namespace Patissier\Shell\Task\Common;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class AppEntityTask extends CoreBakeTask
+class GetOptionsBehaviorTask extends CoreBakeTask
 {
-    public $pathFragment = 'Model/Entity/';
+    public $pathFragment = 'Model/Behavior/';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'app_entity';
+        $name = 'get_options_behavior';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'app_entity';
+        return 'get_options_behavior';
     }
 
     public function fileName($name)
     {
-        return 'AppEntity.php';
+        return 'GetOptionsBehavior.php';
     }
 
     public function template()
     {
-        return 'Patissier.Model/Entity/app_entity';
+        return 'Patissier.Model/Behavior/get_options_behavior';
     }
 }

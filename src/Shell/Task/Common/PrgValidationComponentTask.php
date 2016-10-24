@@ -3,31 +3,31 @@ namespace Patissier\Shell\Task\Common;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class AppEntityTask extends CoreBakeTask
+class PrgValidationComponentTask extends CoreBakeTask
 {
-    public $pathFragment = 'Model/Entity/';
+    public $pathFragment = 'Controller/Component/';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'app_entity';
+        $name = 'prg_validation_component';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'app_entity';
+        return 'prg_validation_component';
     }
 
     public function fileName($name)
     {
-        return 'AppEntity.php';
+        return 'PrgValidationComponent.php';
     }
 
     public function template()
     {
-        return 'Patissier.Model/Entity/app_entity';
+        return 'Patissier.Controller/Component/prg_validation_component';
     }
 }

@@ -3,31 +3,31 @@ namespace Patissier\Shell\Task\Common;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class AppEntityTask extends CoreBakeTask
+class TypeConfigTask extends CoreBakeTask
 {
-    public $pathFragment = 'Model/Entity/';
+    public $pathFragment = 'config/';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'app_entity';
+        $name = 'type_config';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'app_entity';
+        return 'type_config';
     }
 
     public function fileName($name)
     {
-        return 'AppEntity.php';
+        return 'type_config.php';
     }
 
     public function template()
     {
-        return 'Patissier.Model/Entity/app_entity';
+        return 'Patissier.config/type_config';
     }
 }
