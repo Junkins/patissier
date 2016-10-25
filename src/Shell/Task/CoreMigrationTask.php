@@ -13,7 +13,7 @@ class CoreMigrationTask extends MigrationTask
 {
     use ChangeBakeTemplateTrait;
     public $tasks = [
-        'Patissier.SmapleBakeTemplate',
+        'Patissier.SampleBakeTemplate',
         'Patissier.CommonBakeTemplate',
     ];
 

@@ -28,6 +28,6 @@ class BowerJsonTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Patissier.bower_json';
+        return 'bower_json';
     }
 }

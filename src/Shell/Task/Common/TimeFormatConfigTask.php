@@ -28,6 +28,6 @@ class TimeFormatConfigTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Patissier.config/time_format_config';
+        return 'config/time_format_config';
     }
 }

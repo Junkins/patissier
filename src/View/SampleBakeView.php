@@ -3,7 +3,7 @@ namespace Patissier\View;
 
 use Patissier\View\PatissierBakeView;
 
-class SamleBakeView extends PatissierBakeView
+class SampleBakeView extends PatissierBakeView
 {
-    public $appDir = 'Samle';
+    public $appDir = 'Sample';
 }

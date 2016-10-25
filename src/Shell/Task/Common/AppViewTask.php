@@ -28,6 +28,6 @@ class AppViewTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Patissier.View/app_view';
+        return 'View/app_view';
     }
 }

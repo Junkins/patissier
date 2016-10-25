@@ -2,22 +2,16 @@
 namespace Patissier\Shell\Task;
 
 use Patissier\Shell\Task\Traits\ChangeBakeTemplateTrait;
-use Bake\Shell\Task\SimpleBakeTask;
+use Bake\Shell\Task\ModelTask;
 
 /**
- * Task for the wrapper creation of AppClass
+ * CoreModelTask
  */
-class CoreBakeTask extends SimpleBakeTask
+class CoreModelTask extends ModelTask
 {
     use ChangeBakeTemplateTrait;
     public $tasks = [
         'Patissier.SampleBakeTemplate',
         'Patissier.CommonBakeTemplate',
     ];
-
-    public function name(){}
-
-    public function fileName($name){}
-
-    public function template(){}
 }

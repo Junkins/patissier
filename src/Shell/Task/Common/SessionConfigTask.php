@@ -28,6 +28,6 @@ class SessionConfigTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Patissier.config/session_config';
+        return 'config/session_config';
     }
 }

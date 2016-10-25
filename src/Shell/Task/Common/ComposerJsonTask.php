@@ -28,6 +28,6 @@ class ComposerJsonTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Patissier.composer_json';
+        return 'composer_json';
     }
 }

@@ -28,6 +28,6 @@ class FindNoBehaviorTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Patissier.Model/Behavior/find_no_behavior';
+        return 'Model/Behavior/find_no_behavior';
     }
 }

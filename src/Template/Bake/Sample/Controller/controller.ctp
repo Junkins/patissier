@@ -24,6 +24,8 @@ $defaultModel = $name;
 namespace <%= $namespace %>\Controller<%= $prefix %>;
 
 use <%= $namespace %>\Controller\AppController;
+use Cake\Event\Event;
+use Cake\Network\Exception\NotFoundException;
 
 /**
  * <%= $name %> Controller
@@ -38,11 +40,30 @@ foreach ($components as $component):
  */
 class <%= $name %>Controller extends AppController
 {
+<% echo $this->Bake->arrayProperty('helpers', $helpers, ['indent' => false]); %>
+<% echo $this->Bake->arrayProperty('components', $components, ['indent' => false]); %>
+
+/**
+ * beforeFilter
+ * @author ito
+ */
+public function beforeFilter(Event $event)
+{
+    parent::beforeFilter($event);
+}
+
+/**
+ * beforeRender
+ * @author ito
+ */
+public function beforeRender(Event $event)
+{
+    parent::beforeRender($event);
+}
+
 <%
-echo $this->Bake->arrayProperty('helpers', $helpers, ['indent' => false]);
-echo $this->Bake->arrayProperty('components', $components, ['indent' => false]);
 foreach($actions as $action) {
-    echo $this->element('Controller/' . $action);
+    echo $this->element('Patissier.Controller/' . $action);
 }
 %>
 }

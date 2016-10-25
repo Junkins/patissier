@@ -28,6 +28,6 @@ class AppFormHelperTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Patissier.View/Helper/app_form_helper';
+        return 'View/Helper/app_form_helper';
     }
 }

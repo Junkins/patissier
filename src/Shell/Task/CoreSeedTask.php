@@ -15,7 +15,7 @@ class CoreSeedTask extends SeedTask
 {
     use ChangeBakeTemplateTrait;
     public $tasks = [
-        'Patissier.SmapleBakeTemplate',
+        'Patissier.SampleBakeTemplate',
         'Patissier.CommonBakeTemplate',
     ];
 

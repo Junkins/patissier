@@ -28,6 +28,6 @@ class SimpleMasterIndexTraitTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Patissier.Controller/Traits/simple_master_index_trait';
+        return 'Controller/Traits/simple_master_index_trait';
     }
 }

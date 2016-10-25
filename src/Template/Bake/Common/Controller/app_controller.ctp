@@ -14,5 +14,24 @@ class <%= $name %> extends Controller
         // Load Components
         $this->loadComponent('Flash');
         $this->loadComponent('RequestHandler');
+        $this->loadComponent('PrgValidation');
+    }
+
+    /**
+     * beforeFilter
+     * @author ito
+     */
+    public function beforeFilter(Event $event)
+    {
+        parent::beforeFilter($event);
+    }
+
+    /**
+     * beforeRender
+     * @author ito
+     */
+    public function beforeRender(Event $event)
+    {
+        parent::beforeRender($event);
     }
 }
