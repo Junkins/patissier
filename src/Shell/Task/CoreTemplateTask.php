@@ -1,33 +1,34 @@
 <?php
 namespace Patissier\Shell\Task;
 
-use Bake\Shell\Task\BakeTask;
+use Bake\Shell\Task\TemplateTask;
 
-class CoreTemplateTask extends BakeTask
+class CoreTemplateTask extends TemplateTask
 {
-    protected $template = '';
+    public $tasks = [
+        'Patissier.SampleBakeTemplate',
+        'Patissier.CommonBakeTemplate',
+    ];
 
-    public function getContent($action, $vars = null)
+    /**
+     * bake
+     * BackTemplateClassの上書き
+     * @author ito
+     */
+    public function bake($action, $content = '')
     {
-        if (!$vars) {
-            $vars = $this->_loadController();
+        if ( !isset($this->bakeTemplateClass) ) {
+            $this->BakeTemplate = $this->CommonBakeTemplate;
+        } else {
+            switch ($this->bakeTemplateClass) {
+                case 'sample':
+                    $this->BakeTemplate = $this->SampleBakeTemplate;
+                    break;
+                default:
+                    break;
+            }
         }
 
-        if (empty($vars['primaryKey'])) {
-            $this->error('Cannot generate views for models with no primary key');
-            return false;
-        }
-
-        if ($action === "index" && !empty($this->params['index-columns'])) {
-            $this->BakeTemplate->set('indexColumns', $this->params['index-columns']);
-        }
-
-        $this->BakeTemplate->set('action', $action);
-        $this->BakeTemplate->set('plugin', $this->plugin);
-        $this->BakeTemplate->set($vars);
-
-        $template = 'Template/';
-        $template .= (!empty($this->template))?$this->template:$action;
-        return $this->BakeTemplate->generate($template);
+        parent::bake($action, $content);
     }
 }

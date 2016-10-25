@@ -13,4 +13,4 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-echo $this->element('form');
+echo $this->element('Patissier.form');
