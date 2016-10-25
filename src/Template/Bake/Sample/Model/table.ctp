@@ -20,9 +20,9 @@ namespace <%= $namespace %>\Model\Table;
 <%
 $uses = [
     'use ArrayObject;',
-    'use App\Model\AppTable;',
+    'use App\Model\Table\AppTable;',
     "use $namespace\\Model\\Entity\\$entity;",
-    'use Cake\Database\Schema\Table as Schema',
+    'use Cake\Database\Schema\Table as Schema;',
     'use Cake\Datasource\ConnectionManager;',
     'use Cake\Datasource\EntityInterface;',
     'use Cake\Event\Event;',

@@ -2,12 +2,12 @@
 namespace Patissier\Shell\Task;
 
 use Patissier\Shell\Task\Traits\ChangeBakeTemplateTrait;
-use Bake\Shell\Task\ModelTask;
+use Bake\Shell\Task\ControllerTask;
 
 /**
- * CoreModelTask
+ * CoreControllerTask
  */
-class CoreModelTask extends ModelTask
+class CoreControllerTask extends ControllerTask
 {
     use ChangeBakeTemplateTrait;
     public $tasks = [
