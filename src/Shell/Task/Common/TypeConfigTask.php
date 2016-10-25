@@ -28,6 +28,6 @@ class TypeConfigTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Patissier.config/type_config';
+        return 'config/type_config';
     }
 }

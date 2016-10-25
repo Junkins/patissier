@@ -28,6 +28,6 @@ class AppUrlHelperTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Patissier.View/Helper/app_url_helper';
+        return 'View/Helper/app_url_helper';
     }
 }

@@ -28,6 +28,6 @@ class PhpMdTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Patissier.phpmd';
+        return 'phpmd';
     }
 }

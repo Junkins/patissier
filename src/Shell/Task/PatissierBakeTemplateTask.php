@@ -44,4 +44,10 @@ class PatissierBakeTemplateTask extends BakeTemplateTask
         return $this->View;
     }
 
+    public function generate($template, $vars = null)
+    {
+        $template = 'Patissier.'. $template;
+        return parent::generate($template, $vars);
+    }
+
 }

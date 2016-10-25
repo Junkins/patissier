@@ -28,6 +28,6 @@ class PaginatorQueryTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Patissier.ORM/paginator_query';
+        return 'ORM/paginator_query';
     }
 }

@@ -28,6 +28,6 @@ class AppTypeTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Patissier.Database/Type/app_type';
+        return 'Database/Type/app_type';
     }
 }

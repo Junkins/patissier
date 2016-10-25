@@ -10,7 +10,18 @@ trait ChangeBakeTemplateTrait
      */
     public function bake($name)
     {
-        $this->BakeTemplate = $this->CommonBakeTemplate;
+        if ( !isset($this->bakeTemplateClass) ) {
+            $this->BakeTemplate = $this->CommonBakeTemplate;
+        } else {
+            switch ($this->bakeTemplateClass) {
+                case 'sample':
+                    $this->BakeTemplate = $this->SampleBakeTemplate;
+                    break;
+                default:
+                    break;
+            }
+        }
+
         parent::bake($name);
     }
 }

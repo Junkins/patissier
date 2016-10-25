@@ -28,6 +28,6 @@ class OptionLabelEntityTraitTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Patissier.Model/Entity/Traits/option_label_entity_trait';
+        return 'Model/Entity/Traits/option_label_entity_trait';
     }
 }

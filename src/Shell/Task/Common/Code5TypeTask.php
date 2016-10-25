@@ -28,6 +28,6 @@ class Code5TypeTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Patissier.Database/Type/code_5_type';
+        return 'Database/Type/code_5_type';
     }
 }

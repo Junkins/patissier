@@ -28,6 +28,6 @@ class GitPreCommitTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Patissier.git_pre_commit';
+        return 'git_pre_commit';
     }
 }
