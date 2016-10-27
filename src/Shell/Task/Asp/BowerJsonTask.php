@@ -1,33 +1,34 @@
 <?php
-namespace Patissier\Shell\Task\Common;
+namespace Patissier\Shell\Task\Asp;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class SessionConfigTask extends CoreBakeTask
+class BowerJsonTask extends CoreBakeTask
 {
-    public $pathFragment = '../config/';
+    public $pathFragment = '../';
+    public $bakeTemplateClass = 'asp';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'session_config';
+        $name = 'bower_json';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'session_config';
+        return 'bower_json';
     }
 
     public function fileName($name)
     {
-        return 'session_config.php';
+        return 'bower.json';
     }
 
     public function template()
     {
-        return 'config/session_config';
+        return 'bower_json';
     }
 }

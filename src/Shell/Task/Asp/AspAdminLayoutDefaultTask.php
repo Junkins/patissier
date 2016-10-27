@@ -3,32 +3,32 @@ namespace Patissier\Shell\Task\Asp;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class RoutesTask extends CoreBakeTask
+class AspAdminLayoutDefaultTask extends CoreBakeTask
 {
-    public $pathFragment = '../config/';
-    public $bakeTemplateClass = 'asp';
+    public $pathFragment = 'Template/Layout/Admin/';
+    public $bakeTemplateClass = 'asp_admin';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'routes';
+        $name = 'layout_default';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'routes';
+        return 'layout_default';
     }
 
     public function fileName($name)
     {
-        return 'routes.php';
+        return 'default.ctp';
     }
 
     public function template()
     {
-        return 'config/routes';
+        return 'Layout/layout_default';
     }
 }

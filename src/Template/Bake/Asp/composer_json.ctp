@@ -5,7 +5,7 @@
     "license": "MIT",
     "require": {
         "php": ">=5.4.16",
-        "cakephp/cakephp": "~3.0"
+        "cakephp/cakephp": "~3.0",
         "cakephp/migrations": "1.*",
         "cakephp/plugin-installer": "*",
         "friendsofcake/bootstrap-ui": "*",
@@ -14,8 +14,8 @@
         "fusic/encount": "1.*",
         "k1low/property-enum": "1.*",
         "k1low/holiday_jp": "1.*",
-        "kozo/partial": "3.*",
-        "kozo/liberty-behavior": "3.*",
+        "kozo/partial": "3.0.*@dev",
+        "kozo/liberty-behavior": "3.0.*@dev",
         "tutida/pack": "*",
         "satthi/csv-combine-plugin-for-cakephp": "*",
         "junkins/jp-chronos": "*",
@@ -28,17 +28,19 @@
         "phpunit/phpcov": "~3.0",
         "phpmd/phpmd": "*",
         "friendsofphp/php-cs-fixer": "*",
-        "cakephp/cakephp-codesniffer": "dev-master",
+        "cakephp/cakephp-codesniffer": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "Patissier\\": "src"
+            "App\\": "src",
+            "Patissier\\": "./plugins/Patissier/src",
+            "Patissier\\Test\\": "./plugins/Patissier/tests"
         }
     },
     "scripts": {
         "post-install-cmd": [
             "cp git-pre-commit .git/hooks/pre-commit",
-            "chmod -R +x .git/hooks/pre-commit",
+            "chmod -R +x .git/hooks/pre-commit"
         ]
     },
     "autoload-dev": {

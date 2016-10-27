@@ -3,32 +3,32 @@ namespace Patissier\Shell\Task\Asp;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class RoutesTask extends CoreBakeTask
+class AspAdminElementSidebarLinkTask extends CoreBakeTask
 {
-    public $pathFragment = '../config/';
-    public $bakeTemplateClass = 'asp';
+    public $pathFragment = 'Template/Element/Admin/';
+    public $bakeTemplateClass = 'asp_admin';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'routes';
+        $name = 'element_sidebar_link';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'routes';
+        return 'element_sidebar_link';
     }
 
     public function fileName($name)
     {
-        return 'routes.php';
+        return 'sidebar_link.ctp';
     }
 
     public function template()
     {
-        return 'config/routes';
+        return 'Layout/element_sidebar_link';
     }
 }

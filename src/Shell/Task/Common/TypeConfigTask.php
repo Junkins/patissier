@@ -5,7 +5,7 @@ use Patissier\Shell\Task\CoreBakeTask;
 
 class TypeConfigTask extends CoreBakeTask
 {
-    public $pathFragment = 'config/';
+    public $pathFragment = '../config/';
 
     /**
      * Execute method

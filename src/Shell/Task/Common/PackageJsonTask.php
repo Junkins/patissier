@@ -3,31 +3,31 @@ namespace Patissier\Shell\Task\Common;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class SessionConfigTask extends CoreBakeTask
+class PackageJsonTask extends CoreBakeTask
 {
-    public $pathFragment = '../config/';
+    public $pathFragment = '../';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'session_config';
+        $name = 'package_json';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'session_config';
+        return 'package_json';
     }
 
     public function fileName($name)
     {
-        return 'session_config.php';
+        return 'package.json';
     }
 
     public function template()
     {
-        return 'config/session_config';
+        return 'package_json';
     }
 }

@@ -3,32 +3,32 @@ namespace Patissier\Shell\Task\Asp;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class RoutesTask extends CoreBakeTask
+class AspAdminElementPaginateTask extends CoreBakeTask
 {
-    public $pathFragment = '../config/';
-    public $bakeTemplateClass = 'asp';
+    public $pathFragment = 'Template/Element/Admin/';
+    public $bakeTemplateClass = 'asp_admin';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'routes';
+        $name = 'element_paginate';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'routes';
+        return 'element_paginate';
     }
 
     public function fileName($name)
     {
-        return 'routes.php';
+        return 'paginate.ctp';
     }
 
     public function template()
     {
-        return 'config/routes';
+        return 'Layout/element_paginate';
     }
 }

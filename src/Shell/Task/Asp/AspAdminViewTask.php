@@ -1,33 +1,34 @@
 <?php
-namespace Patissier\Shell\Task\Common;
+namespace Patissier\Shell\Task\Asp;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class SessionConfigTask extends CoreBakeTask
+class AspAdminViewTask extends CoreBakeTask
 {
-    public $pathFragment = '../config/';
+    public $bakeTemplateClass = 'asp_admin';
+    public $pathFragment = 'View/';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'session_config';
+        $name = 'admin_view';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'session_config';
+        return 'admin_view';
     }
 
     public function fileName($name)
     {
-        return 'session_config.php';
+        return 'Admin.php';
     }
 
     public function template()
     {
-        return 'config/session_config';
+        return 'View/admin_view';
     }
 }

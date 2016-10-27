@@ -11,7 +11,9 @@
     },
     "autoload": {
         "psr-4": {
-            "Patissier\\": "src"
+            "App\\": "src",
+            "Patissier\\": "./plugins/Patissier/src",
+            "Patissier\\Test\\": "./plugins/Patissier/tests"
         }
     },
     "autoload-dev": {
