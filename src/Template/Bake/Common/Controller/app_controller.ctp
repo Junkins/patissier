@@ -5,7 +5,7 @@ use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\Routing\Router;
 
-class <%= $name %> extends Controller
+abstract class <%= $name %> extends Controller
 {
     public function initialize()
     {

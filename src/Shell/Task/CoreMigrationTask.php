@@ -15,6 +15,9 @@ class CoreMigrationTask extends MigrationTask
     public $tasks = [
         'Patissier.SampleBakeTemplate',
         'Patissier.CommonBakeTemplate',
+        'Patissier.AspBakeTemplate',
+        'Patissier.AspAdminBakeTemplate',
+        'Patissier.AspUserBakeTemplate',
     ];
 
    /**

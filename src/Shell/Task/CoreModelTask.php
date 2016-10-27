@@ -13,5 +13,8 @@ class CoreModelTask extends ModelTask
     public $tasks = [
         'Patissier.SampleBakeTemplate',
         'Patissier.CommonBakeTemplate',
+        'Patissier.AspBakeTemplate',
+        'Patissier.AspAdminBakeTemplate',
+        'Patissier.AspUserBakeTemplate',
     ];
 }

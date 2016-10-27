@@ -13,6 +13,9 @@ class CoreBakeTask extends SimpleBakeTask
     public $tasks = [
         'Patissier.SampleBakeTemplate',
         'Patissier.CommonBakeTemplate',
+        'Patissier.AspBakeTemplate',
+        'Patissier.AspAdminBakeTemplate',
+        'Patissier.AspUserBakeTemplate',
     ];
 
     public function name(){}

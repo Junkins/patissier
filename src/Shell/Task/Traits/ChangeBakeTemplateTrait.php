@@ -17,6 +17,15 @@ trait ChangeBakeTemplateTrait
                 case 'sample':
                     $this->BakeTemplate = $this->SampleBakeTemplate;
                     break;
+                case 'asp':
+                    $this->BakeTemplate = $this->AspBakeTemplate;
+                    break;
+                case 'asp_admin':
+                    $this->BakeTemplate = $this->AspAdminBakeTemplate;
+                    break;
+                case 'asp_user':
+                    $this->BakeTemplate = $this->AspUserBakeTemplate;
+                    break;
                 default:
                     break;
             }

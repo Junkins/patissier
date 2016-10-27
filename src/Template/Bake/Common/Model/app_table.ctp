@@ -19,7 +19,7 @@ echo implode("\n", $uses);
 /**
  * <%= $name %>
  */
-class <%= $name %> extends Table
+abstract class <%= $name %> extends Table
 {
     /**
      * initialize

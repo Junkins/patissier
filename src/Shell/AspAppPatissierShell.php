@@ -3,7 +3,7 @@ namespace Patissier\Shell;
 
 use Patissier\Shell\PatissierShell;
 
-class SampleAppPatissierShell extends PatissierShell
+class AspAppPatissierShell extends PatissierShell
 {
-    public $subDir = 'Cms';
+    public $subDir = 'Asp';
 }

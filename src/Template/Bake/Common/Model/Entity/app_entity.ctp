@@ -6,5 +6,5 @@ use Cake\ORM\Entity;
 /**
  * <%= $name %>
  */
-class <%= $name %> extends Entity
+abstract class <%= $name %> extends Entity
 {}
