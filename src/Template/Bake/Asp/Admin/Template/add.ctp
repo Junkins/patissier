@@ -1,1 +1,1 @@
-Admin
+<% echo $this->element('form');

@@ -1,1 +1,1 @@
-User
+<% echo $this->element('form');
