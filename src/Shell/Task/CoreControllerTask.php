@@ -16,5 +16,6 @@ class CoreControllerTask extends ControllerTask
         'Patissier.AspBakeTemplate',
         'Patissier.AspAdminBakeTemplate',
         'Patissier.AspUserBakeTemplate',
+        'Patissier.AspCommonBakeTemplate',
     ];
 }

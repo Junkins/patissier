@@ -16,6 +16,7 @@ class CoreBakeTask extends SimpleBakeTask
         'Patissier.AspBakeTemplate',
         'Patissier.AspAdminBakeTemplate',
         'Patissier.AspUserBakeTemplate',
+        'Patissier.AspCommonBakeTemplate',
     ];
 
     public function name(){}

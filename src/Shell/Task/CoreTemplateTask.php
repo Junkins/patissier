@@ -11,6 +11,7 @@ class CoreTemplateTask extends TemplateTask
         'Patissier.AspBakeTemplate',
         'Patissier.AspAdminBakeTemplate',
         'Patissier.AspUserBakeTemplate',
+        'Patissier.AspCommonBakeTemplate',
     ];
 
     /**

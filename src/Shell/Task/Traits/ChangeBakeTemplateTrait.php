@@ -26,6 +26,9 @@ trait ChangeBakeTemplateTrait
                 case 'asp_user':
                     $this->BakeTemplate = $this->AspUserBakeTemplate;
                     break;
+                case 'asp_common':
+                    $this->BakeTemplate = $this->AspCommonBakeTemplate;
+                    break;
                 default:
                     break;
             }

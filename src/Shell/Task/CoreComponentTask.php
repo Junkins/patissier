@@ -16,5 +16,6 @@ class CoreComponentTask extends ComponentTask
         'Patissier.AspBakeTemplate',
         'Patissier.AspAdminBakeTemplate',
         'Patissier.AspUserBakeTemplate',
+        'Patissier.AspCommonBakeTemplate',
     ];
 }

@@ -1,7 +1,7 @@
 <?php
 namespace <%= $namespace %>\Controller\Admin;
 
-use App\Controller\AdminComponentRegistry;
+use App\Controller\Admin\AdminComponentRegistry;
 use <%= $namespace %>\Controller\AppController;
 use Cake\Event\Event;
 use Cake\Routing\Router;

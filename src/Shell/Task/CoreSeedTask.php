@@ -20,6 +20,7 @@ class CoreSeedTask extends SeedTask
         'Patissier.AspBakeTemplate',
         'Patissier.AspAdminBakeTemplate',
         'Patissier.AspUserBakeTemplate',
+        'Patissier.AspCommonBakeTemplate',
     ];
 
     /**

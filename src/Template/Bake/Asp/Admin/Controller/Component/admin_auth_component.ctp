@@ -25,16 +25,17 @@ class AdminAuthComponent extends AuthComponent
         'loginAction' => [
             'controller' => 'admins',
             'action'     => 'login',
-            'prefix'     => 'admins',
+            'prefix'     => 'admin',
         ],
         'loginRedirect' => [
             'controller' => 'tops',
             'action'     => 'top',
-            'prefix'     => 'admins',
+            'prefix'     => 'admin',
         ],
         'storage' => [
             'className' => 'Session',
             'key' => 'Auth.Admin'
         ],
+        'checkAuthIn' => 'Controller.startup'
     ];
 }

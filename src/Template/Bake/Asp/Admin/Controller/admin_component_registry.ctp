@@ -1,6 +1,7 @@
 <?php
-namespace App\Controller;
+namespace App\Controller\Admin;
 
+use Cake\Core\App;
 use Cake\Controller\ComponentRegistry;
 
 class AdminComponentRegistry extends ComponentRegistry
