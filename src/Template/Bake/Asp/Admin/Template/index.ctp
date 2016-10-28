@@ -3,7 +3,7 @@ use Cake\Utility\Inflector;
 
 $fields = collection($fields)
     ->filter(function($field) use ($schema) {
-        return !in_array($schema->columnType($field), ['binary', 'text']);
+        return true;
     });
 
 if (isset($modelObject) && $modelObject->behaviors()->has('Tree')) {
@@ -50,7 +50,57 @@ if (!empty($indexColumns)) {
             <div class="box-body">
                 <div class="row">
                     <div class="col-sm-12">
-                        <?= $this->element('table'); ?>
+                        <div class="scroll">
+                            <table class="table table-bordered table-hover dataTable default-table" role="grid">
+                                <thead>
+                                    <tr>
+                                        <% foreach ($fields as $field): %>
+                                            <th><?= $this->Paginator->sort('<%= $field %>') ?></th>
+                                        <% endforeach; %>
+                                            <th class="actions"><?= __('Actions') ?></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($<%= $pluralVar %> as $<%= $singularVar %>): ?>
+                                    <tr>
+                        <%        foreach ($fields as $field) {
+                                    $isKey = false;
+                                    if (!empty($associations['BelongsTo'])) {
+                                        foreach ($associations['BelongsTo'] as $alias => $details) {
+                                            if ($field === $details['foreignKey']) {
+                                                $isKey = true;
+                        %>
+                                        <td><?= $<%= $singularVar %>->has('<%= $details['property'] %>') ? $this->Html->link($<%= $singularVar %>-><%= $details['property'] %>-><%= $details['displayField'] %>, ['controller' => '<%= $details['controller'] %>', 'action' => 'view', $<%= $singularVar %>-><%= $details['property'] %>-><%= $details['primaryKey'][0] %>]) : '' ?></td>
+                        <%
+                                                break;
+                                            }
+                                        }
+                                    }
+                                    if ($isKey !== true) {
+                                        if (!in_array($schema->columnType($field), ['integer', 'biginteger', 'decimal', 'float'])) {
+                        %>
+                                        <td><?= h($<%= $singularVar %>-><%= $field %>) ?></td>
+                        <%
+                                        } else {
+                        %>
+                                        <td><?= $this->Number->format($<%= $singularVar %>-><%= $field %>) ?></td>
+                        <%
+                                        }
+                                    }
+                                }
+
+                                $pk = '$' . $singularVar . '->' . $primaryKey[0];
+                        %>
+                                        <td class="actions">
+                                            <?= $this->Html->link(__('View'), ['action' => 'view', <%= $pk %>]) ?>
+                                            <?= $this->Html->link(__('Edit'), ['action' => 'edit', <%= $pk %>]) ?>
+                                            <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', <%= $pk %>], ['confirm' => __('Are you sure you want to delete # {0}?', <%= $pk %>)]) ?>
+                                        </td>
+                                    </tr>
+                                    <?php endforeach; ?>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>

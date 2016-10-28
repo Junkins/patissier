@@ -29,6 +29,6 @@ class AspAdminElementTableTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Layout/element_table';
+        return 'Element/element_table';
     }
 }

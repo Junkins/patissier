@@ -29,6 +29,6 @@ class AspAdminElementFooterTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Layout/element_footer';
+        return 'Element/element_footer';
     }
 }

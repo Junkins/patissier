@@ -42,7 +42,6 @@ class <%= $name %> extends View
      */
     public function element($name, array $data = [], array $options = [])
     {
-        $name = 'Admin/' . $name;
         return parent::element($name, $data, $options);
     }
 

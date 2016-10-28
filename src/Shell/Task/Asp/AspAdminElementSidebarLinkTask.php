@@ -5,7 +5,7 @@ use Patissier\Shell\Task\CoreBakeTask;
 
 class AspAdminElementSidebarLinkTask extends CoreBakeTask
 {
-    public $pathFragment = 'Template/Element/Admin/';
+    public $pathFragment = 'Template/Admin/Element/';
     public $bakeTemplateClass = 'asp_admin';
 
     /**
@@ -29,6 +29,6 @@ class AspAdminElementSidebarLinkTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Layout/element_sidebar_link';
+        return 'Element/element_sidebar_link';
     }
 }

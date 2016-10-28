@@ -5,7 +5,7 @@ use Patissier\Shell\Task\CoreBakeTask;
 
 class AspAdminElementHeaderTask extends CoreBakeTask
 {
-    public $pathFragment = 'Template/Element/Admin/';
+    public $pathFragment = 'Template/Admin/Element/';
     public $bakeTemplateClass = 'asp_admin';
 
     /**
@@ -29,6 +29,6 @@ class AspAdminElementHeaderTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Layout/element_header';
+        return 'Element/element_header';
     }
 }

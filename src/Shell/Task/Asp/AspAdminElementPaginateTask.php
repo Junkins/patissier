@@ -5,8 +5,8 @@ use Patissier\Shell\Task\CoreBakeTask;
 
 class AspAdminElementPaginateTask extends CoreBakeTask
 {
-    public $pathFragment = 'Template/Element/Admin/';
     public $bakeTemplateClass = 'asp_admin';
+    public $pathFragment = 'Template/Admin/Element/';
 
     /**
      * Execute method
@@ -29,6 +29,6 @@ class AspAdminElementPaginateTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Layout/element_paginate';
+        return 'Element/element_paginate';
     }
 }
