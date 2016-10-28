@@ -17,7 +17,7 @@ abstract class AdminAppController extends AppController
         parent::initialize();
         $this->viewBuilder()->className('App\View\AdminView');
         // 認証用のコンポーネントの読み込み
-        $this->loadComponent('AdminAuth');
+        // $this->loadComponent('AdminAuth');
     }
 
     /**

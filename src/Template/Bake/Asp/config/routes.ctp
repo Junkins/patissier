@@ -10,12 +10,14 @@ Router::scope('/', function (RouteBuilder $routes) {
 
     // 会員のRoutes設定
     Router::prefix('user', function ($routes) {
+        $routes->connect('/', ['controller' => 'Tops', 'action' => 'top']);
         $routes->connect('/:controller', [], ['routeClass' => 'InflectedRoute']);
         $routes->connect('/:controller/:action/*', [], ['routeClass' => 'InflectedRoute']);
     });
 
     // 管理者のRoutes設定
     Router::prefix('admin', function ($routes) {
+        $routes->connect('/', ['controller' => 'Tops', 'action' => 'top']);
         $routes->connect('/:controller', [], ['routeClass' => 'InflectedRoute']);
         $routes->connect('/:controller/:action/*', [], ['routeClass' => 'InflectedRoute']);
     });
