@@ -21,7 +21,7 @@ use Cake\Utility\Inflector;
 $defaultModel = $name;
 %>
 <?php
-namespace <%= $namespace %>\Controller<%= $prefix %>\Admin;
+namespace <%= $namespace %>\Controller\Admin;
 
 use <%= $namespace %>\Controller\Admin\AdminAppController;
 use Cake\Event\Event;

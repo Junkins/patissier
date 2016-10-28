@@ -3,32 +3,32 @@ namespace Patissier\Shell\Task\Asp;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class AspAdminLayoutDefaultTask extends CoreBakeTask
+class AspAdminTopTemplateTask extends CoreBakeTask
 {
     public $bakeTemplateClass = 'asp_admin';
-    public $pathFragment = 'Template/Layout/Admin/';
+    public $pathFragment = 'Template/Admin/Tops/';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'layout_default';
+        $name = 'top';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'layout_default';
+        return 'top';
     }
 
     public function fileName($name)
     {
-        return 'default.ctp';
+        return 'top.ctp';
     }
 
     public function template()
     {
-        return 'Layout/layout_default';
+        return 'Template/top';
     }
 }

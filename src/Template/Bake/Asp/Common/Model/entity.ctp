@@ -50,7 +50,7 @@ use App\Model\Entity\AppEntity;
 <% endforeach; %>
 <% endif; %>
  */
-class <%= $name %> extends AppEntity
+abstract class <%= $name %> extends AppEntity
 {
     /**
      * __get

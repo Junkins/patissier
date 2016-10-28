@@ -44,7 +44,7 @@ echo implode("\n", $uses);
 <% endforeach; %>
 <% endif; %>
  */
-class <%= $name %>Table extends AppTable
+abstract class <%= $name %>Table extends AppTable
 {
     /**
      * _initializeSchema
