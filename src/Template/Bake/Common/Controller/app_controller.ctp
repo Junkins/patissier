@@ -33,5 +33,6 @@ abstract class <%= $name %> extends Controller
     public function beforeRender(Event $event)
     {
         parent::beforeRender($event);
+        $this->set('modelClassName', $this->modelClass);
     }
 }

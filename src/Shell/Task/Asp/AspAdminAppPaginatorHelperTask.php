@@ -3,32 +3,32 @@ namespace Patissier\Shell\Task\Asp;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class AspAdminViewTask extends CoreBakeTask
+class AspAdminAppPaginatorHelperTask extends CoreBakeTask
 {
     public $bakeTemplateClass = 'asp_admin';
-    public $pathFragment = 'View/';
+    public $pathFragment = 'View/Helper/Admin/';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'admin_view';
+        $name = 'app_paginator_helper';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'admin_view';
+        return 'app_paginator_helper';
     }
 
     public function fileName($name)
     {
-        return 'AdminView.php';
+        return 'AppPaginatorHelper.php';
     }
 
     public function template()
     {
-        return 'View/admin_view';
+        return 'View/Helper/app_paginator_helper';
     }
 }

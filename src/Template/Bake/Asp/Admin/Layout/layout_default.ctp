@@ -6,7 +6,7 @@
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <?= $this->fetch('meta') ?>
         <title>
-            <?= $this->assign('title', $pageTitle); ?>
+            'Test App'
             <?= __($this->fetch('title')); ?>
         </title>
         <?= $this->Html->meta('icon'); ?>
@@ -15,23 +15,23 @@
         <?= $this->Html->css('../bower_components/admin-lte/plugins/select2/select2.min.css'); ?>
         <?= $this->Html->css('../bower_components/admin-lte/dist/css/AdminLTE.min.css'); ?>
         <?= $this->Html->css('../bower_components/admin-lte/dist/css/skins/skin-black-light.min.css'); ?>
-        <?= $this->Html->css('../bower_components/admin-lte/plugins/daterangepicker/daterangepicker-bs3.css'); ?>
+        <?= $this->Html->css('../bower_components/admin-lte/plugins/daterangepicker/daterangepicker.css'); ?>
         <?= $this->Html->css('../bower_components/admin-lte/plugins/datepicker/datepicker3.css'); ?>
         <?= $this->Html->css('../bower_components/admin-lte/plugins/timepicker/bootstrap-timepicker.min.css'); ?>
         <?= $this->Html->css('../bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css'); ?>
         <?= $this->fetch('css') ?>
 
-        <?= $this->Html->script('/adminlte/plugins/jQuery/jQuery-2.2.0.min'); ?>
-        <?= $this->Html->script('/adminlte/bootstrap/js/bootstrap.min'); ?>
-        <?= $this->Html->script('/adminlte/plugins/select2/select2.full.min'); ?>
-        <?= $this->Html->script('/adminlte/plugins/daterangepicker/daterangepicker.js'); ?>
-        <?= $this->Html->script('/adminlte/plugins/datepicker/bootstrap-datepicker.js'); ?>
-        <?= $this->Html->script('/adminlte/plugins/datepicker/locales/bootstrap-datepicker.ja.js'); ?>
-        <?= $this->Html->script('/adminlte/plugins/timepicker/bootstrap-timepicker.min.js'); ?>
+        <?= $this->Html->script('../bower_components/moment/min/moment.min'); ?>
+        <?= $this->Html->script('../bower_components/jsrender/jsrender'); ?>
+        <?= $this->Html->script('../bower_components/admin-lte/plugins/jQuery/jquery-2.2.3.min'); ?>
+        <?= $this->Html->script('../bower_components/admin-lte/bootstrap/js/bootstrap.min'); ?>
+        <?= $this->Html->script('../bower_components/admin-lte/plugins/select2/select2.full.min'); ?>
+        <?= $this->Html->script('../bower_components/admin-lte/plugins/daterangepicker/daterangepicker'); ?>
+        <?= $this->Html->script('../bower_components/admin-lte/plugins/datepicker/bootstrap-datepicker'); ?>
+        <?= $this->Html->script('../bower_components/admin-lte/plugins/datepicker/locales/bootstrap-datepicker.ja.js'); ?>
+        <?= $this->Html->script('../bower_components/admin-lte/plugins/timepicker/bootstrap-timepicker.min.js'); ?>
+        <?= $this->Html->script('../bower_components/jquery-ui/jquery-ui.min'); ?>
 
-        <?= $this->Html->script('/jqueryui/jquery-ui.min'); ?>
-        <?= $this->Html->script('/moment/moment.min'); ?>
-        <?= $this->Html->script('jsrender'); ?>
         <?= $this->fetch('script'); ?>
     </head>
     <body class="hold-transition skin-black-light sidebar-mini">

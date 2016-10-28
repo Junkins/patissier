@@ -1,6 +1,7 @@
 <?php
 namespace <%= $namespace %>\View;
 
+use App\View\AdminHelperRegistry;
 use Cake\View\View;
 use Partial\View\PartialTrait;
 
@@ -43,5 +44,18 @@ class <%= $name %> extends View
     {
         $name = 'Admin/' . $name;
         return parent::element($name, $data, $options);
+    }
+
+    /**
+     * helpers
+     * @author ito
+     */
+    public function helpers()
+    {
+        if ($this->_helpers === null) {
+            $this->_helpers = new AdminHelperRegistry($this);
+        }
+
+        return $this->_helpers;
     }
 }

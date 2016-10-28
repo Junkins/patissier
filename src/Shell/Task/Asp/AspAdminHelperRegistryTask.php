@@ -3,7 +3,7 @@ namespace Patissier\Shell\Task\Asp;
 
 use Patissier\Shell\Task\CoreBakeTask;
 
-class AspAdminViewTask extends CoreBakeTask
+class AspAdminHelperRegistryTask extends CoreBakeTask
 {
     public $bakeTemplateClass = 'asp_admin';
     public $pathFragment = 'View/';
@@ -13,22 +13,22 @@ class AspAdminViewTask extends CoreBakeTask
      */
     public function main($name = null)
     {
-        $name = 'admin_view';
+        $name = 'admin_helper_registry';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'admin_view';
+        return 'admin_helper_registry';
     }
 
     public function fileName($name)
     {
-        return 'AdminView.php';
+        return 'AdminHelperRegistry.php';
     }
 
     public function template()
     {
-        return 'View/admin_view';
+        return 'View/admin_helper_registry';
     }
 }

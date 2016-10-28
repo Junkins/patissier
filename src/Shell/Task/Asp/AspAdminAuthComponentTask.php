@@ -1,34 +1,34 @@
 <?php
 namespace Patissier\Shell\Task\Asp;
 
-use Patissier\Shell\Task\CoreBakeTask;
+use Patissier\Shell\Task\CoreComponentTask;
 
-class AspAdminViewTask extends CoreBakeTask
+class AspAdminAuthComponentTask extends CoreComponentTask
 {
     public $bakeTemplateClass = 'asp_admin';
-    public $pathFragment = 'View/';
+    public $pathFragment = 'Controller/Component/Admin/';
 
     /**
      * Execute method
      */
     public function main($name = null)
     {
-        $name = 'admin_view';
+        $name = 'admin_auth_component';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'admin_view';
+        return 'admin_auth_component';
     }
 
     public function fileName($name)
     {
-        return 'AdminView.php';
+        return 'AdminAuthComponent.php';
     }
 
     public function template()
     {
-        return 'View/admin_view';
+        return 'Controller/Component/admin_auth_component';
     }
 }

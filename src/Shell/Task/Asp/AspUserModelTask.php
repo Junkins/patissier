@@ -9,5 +9,5 @@ use Patissier\Shell\Task\CoreModelTask;
 class AspuserModelTask extends CoreModelTask
 {
     public $bakeTemplateClass = 'asp_user';
-    public $pathFragment = 'Model/user/';
+    public $pathFragment = 'Model/User/';
 }

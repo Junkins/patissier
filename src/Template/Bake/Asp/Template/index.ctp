@@ -33,8 +33,8 @@ if (!empty($indexColumns)) {
                 <div class="box-body">
                     <?= $this->Form->create($modelClassName, ['type' => 'post', 'url' => ['action' => 'index']]) ?>
                     <div class="row">
-                        <?= $this->Form->input('dummy', ['class' => 'datepicker']) ?>
                         <div class="col-md-6">
+                            <?= $this->Form->input('dummy', ['class' => 'datepicker']) ?>
                         </div>
                         <div class="col-md-12">
                             <div class="row">
