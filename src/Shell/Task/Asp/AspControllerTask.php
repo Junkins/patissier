@@ -9,4 +9,5 @@ use Patissier\Shell\Task\CoreControllerTask;
 class AspControllerTask extends CoreControllerTask
 {
     public $bakeTemplateClass = 'asp';
+    public $pathFragment = 'Controller/';
 }

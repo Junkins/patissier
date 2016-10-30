@@ -6,4 +6,5 @@ use Patissier\Shell\Task\CoreTemplateTask;
 class AspTemplateTask extends CoreTemplateTask
 {
     public $bakeTemplateClass = 'asp';
+    public $pathFragment = 'Template/';
 }
