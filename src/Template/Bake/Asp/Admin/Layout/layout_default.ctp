@@ -11,10 +11,17 @@
         </title>
         <?= $this->Html->meta('icon'); ?>
 
+        <!-- bootstrap -->
         <?= $this->Html->css('../bower_components/admin-lte/bootstrap/css/bootstrap.min.css'); ?>
+        <!-- font awesome -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- ionicons -->
+        <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- adminLTE style -->
         <?= $this->Html->css('../bower_components/admin-lte/plugins/select2/select2.min.css'); ?>
         <?= $this->Html->css('../bower_components/admin-lte/dist/css/AdminLTE.min.css'); ?>
         <?= $this->Html->css('../bower_components/admin-lte/dist/css/skins/skin-black-light.min.css'); ?>
+
         <?= $this->Html->css('../bower_components/admin-lte/plugins/daterangepicker/daterangepicker.css'); ?>
         <?= $this->Html->css('../bower_components/admin-lte/plugins/datepicker/datepicker3.css'); ?>
         <?= $this->Html->css('../bower_components/admin-lte/plugins/timepicker/bootstrap-timepicker.min.css'); ?>
@@ -26,6 +33,8 @@
         <?= $this->Html->script('../bower_components/jsrender/jsrender'); ?>
         <?= $this->Html->script('../bower_components/admin-lte/plugins/jQuery/jquery-2.2.3.min'); ?>
         <?= $this->Html->script('../bower_components/admin-lte/bootstrap/js/bootstrap.min'); ?>
+        <?= $this->Html->script('../bower_components/admin-lte/dist/js/app.min.js'); ?>
+
         <?= $this->Html->script('../bower_components/admin-lte/plugins/select2/select2.full.min'); ?>
         <?= $this->Html->script('../bower_components/admin-lte/plugins/daterangepicker/daterangepicker'); ?>
         <?= $this->Html->script('../bower_components/admin-lte/plugins/datepicker/bootstrap-datepicker'); ?>
