@@ -29,6 +29,6 @@ class AspAdminElementSidebarLinkTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Element/element_sidebar_link';
+        return '/Element/element_sidebar_link';
     }
 }

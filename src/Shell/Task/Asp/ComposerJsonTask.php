@@ -29,6 +29,6 @@ class ComposerJsonTask extends CoreBakeTask
 
     public function template()
     {
-        return 'composer_json';
+        return '/composer_json';
     }
 }

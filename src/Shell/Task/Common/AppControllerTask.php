@@ -28,6 +28,6 @@ class AppControllerTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Controller/app_controller';
+        return '/Controller/app_controller';
     }
 }

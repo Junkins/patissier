@@ -29,6 +29,6 @@ class AspAdminLayoutDefaultTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Layout/layout_default';
+        return '/Layout/layout_default';
     }
 }

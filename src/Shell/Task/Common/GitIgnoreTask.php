@@ -28,6 +28,6 @@ class GitIgnoreTask extends CoreBakeTask
 
     public function template()
     {
-        return 'git_ignore';
+        return '/git_ignore';
     }
 }

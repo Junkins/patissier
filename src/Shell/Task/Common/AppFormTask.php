@@ -28,6 +28,6 @@ class AppFormTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Form/app_form';
+        return '/Form/app_form';
     }
 }

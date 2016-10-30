@@ -5,9 +5,7 @@ use Bake\View\BakeView;
 
 class PatissierBakeView extends BakeView
 {
-
     public $layout = 'Patissier.default';
-
     public $appDir = '';
 
     protected function _paths($plugin = null, $cached = true)

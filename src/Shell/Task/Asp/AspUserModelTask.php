@@ -4,9 +4,9 @@ namespace Patissier\Shell\Task\Asp;
 use Patissier\Shell\Task\CoreModelTask;
 
 /**
- * AspuserModelTask
+ * AspUserModelTask
  */
-class AspuserModelTask extends CoreModelTask
+class AspUserModelTask extends CoreModelTask
 {
     public $bakeTemplateClass = 'asp_user';
     public $pathFragment = 'Model/User/';

@@ -28,6 +28,6 @@ class SimpleMasterDeleteTraitTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Controller/Traits/simple_master_delete_trait';
+        return '/Controller/Traits/simple_master_delete_trait';
     }
 }

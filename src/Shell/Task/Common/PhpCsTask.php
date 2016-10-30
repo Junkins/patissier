@@ -28,6 +28,6 @@ class PhpCsTask extends CoreBakeTask
 
     public function template()
     {
-        return 'php_cs';
+        return '/php_cs';
     }
 }

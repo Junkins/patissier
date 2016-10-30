@@ -5,5 +5,5 @@ use Patissier\View\PatissierBakeView;
 
 class SampleBakeView extends PatissierBakeView
 {
-    public $appDir = 'Sample';
+    public $appDir = 'Sample/';
 }

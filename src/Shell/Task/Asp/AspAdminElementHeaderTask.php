@@ -29,6 +29,6 @@ class AspAdminElementHeaderTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Element/element_header';
+        return '/Element/element_header';
     }
 }

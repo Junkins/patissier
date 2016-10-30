@@ -28,6 +28,6 @@ class AdminEntityTraitTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Model/Entity/Traits/admin_entity_trait';
+        return '/Model/Entity/Traits/admin_entity_trait';
     }
 }

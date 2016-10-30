@@ -5,5 +5,10 @@ use Patissier\View\PatissierBakeView;
 
 class AspAdminBakeView extends PatissierBakeView
 {
+    // ファイルパスが「//」にならないように工夫
+    // View::_getViewFileName()
+    // } elseif (!$plugin || $this->templatePath !== $this->name) {
+    // 対策
+    public $name = 'AspAdmin';
     public $appDir = 'Asp/Admin';
 }

@@ -28,6 +28,6 @@ class AppPaginatorHelperTask extends CoreBakeTask
 
     public function template()
     {
-        return 'View/Helper/app_paginator_helper';
+        return '/View/Helper/app_paginator_helper';
     }
 }

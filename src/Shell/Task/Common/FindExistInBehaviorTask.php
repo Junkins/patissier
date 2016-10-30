@@ -28,6 +28,6 @@ class FindExistInBehaviorTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Model/Behavior/find_exist_in_behavior';
+        return '/Model/Behavior/find_exist_in_behavior';
     }
 }

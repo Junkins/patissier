@@ -29,6 +29,6 @@ class RoutesTask extends CoreBakeTask
 
     public function template()
     {
-        return 'config/routes';
+        return '/config/routes';
     }
 }

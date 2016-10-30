@@ -29,6 +29,6 @@ class AspAdminElementPaginateTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Element/element_paginate';
+        return '/Element/element_paginate';
     }
 }

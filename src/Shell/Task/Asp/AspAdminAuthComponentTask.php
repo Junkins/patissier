@@ -29,6 +29,6 @@ class AspAdminAuthComponentTask extends CoreComponentTask
 
     public function template()
     {
-        return 'Controller/Component/admin_auth_component';
+        return '/Controller/Component/admin_auth_component';
     }
 }

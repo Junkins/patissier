@@ -19,6 +19,6 @@ class AuthTask extends SimpleBakeTask
 
     public function template()
     {
-        return 'Auth/auth';
+        return '/Auth/auth';
     }
 }

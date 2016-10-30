@@ -28,6 +28,6 @@ class Code2TypeTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Database/Type/code_2_type';
+        return '/Database/Type/code_2_type';
     }
 }

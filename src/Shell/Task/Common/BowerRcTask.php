@@ -28,6 +28,6 @@ class BowerRcTask extends CoreBakeTask
 
     public function template()
     {
-        return 'bowerrc';
+        return '/bowerrc';
     }
 }

@@ -28,6 +28,6 @@ class FindIgnoreBehaviorTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Model/Behavior/find_ignore_behavior';
+        return '/Model/Behavior/find_ignore_behavior';
     }
 }

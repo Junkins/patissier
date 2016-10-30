@@ -29,6 +29,6 @@ class AspAdminError400TemplateTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Template/error400';
+        return '/Template/error400';
     }
 }

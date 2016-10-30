@@ -28,6 +28,6 @@ class AppEntityTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Model/Entity/app_entity';
+        return '/Model/Entity/app_entity';
     }
 }

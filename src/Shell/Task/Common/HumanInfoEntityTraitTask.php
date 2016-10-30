@@ -28,6 +28,6 @@ class HumanInfoEntityTraitTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Model/Entity/Traits/human_info_entity_trait';
+        return '/Model/Entity/Traits/human_info_entity_trait';
     }
 }

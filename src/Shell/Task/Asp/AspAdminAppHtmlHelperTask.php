@@ -29,6 +29,6 @@ class AspAdminAppHtmlHelperTask extends CoreBakeTask
 
     public function template()
     {
-        return 'View/Helper/app_html_helper';
+        return '/View/Helper/app_html_helper';
     }
 }

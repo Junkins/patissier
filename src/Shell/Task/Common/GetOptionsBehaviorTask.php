@@ -28,6 +28,6 @@ class GetOptionsBehaviorTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Model/Behavior/get_options_behavior';
+        return '/Model/Behavior/get_options_behavior';
     }
 }

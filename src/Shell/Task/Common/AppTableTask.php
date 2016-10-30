@@ -28,6 +28,6 @@ class AppTableTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Model/app_table';
+        return '/Model/app_table';
     }
 }

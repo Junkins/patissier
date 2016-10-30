@@ -28,6 +28,6 @@ class PrgValidationComponentTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Controller/Component/prg_validation_component';
+        return '/Controller/Component/prg_validation_component';
     }
 }

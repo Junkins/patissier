@@ -29,6 +29,6 @@ class AspAdminError500TemplateTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Template/error500';
+        return '/Template/error500';
     }
 }

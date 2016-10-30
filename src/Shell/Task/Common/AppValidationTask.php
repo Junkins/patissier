@@ -28,6 +28,6 @@ class AppValidationTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Validation/app_validation';
+        return '/Validation/app_validation';
     }
 }

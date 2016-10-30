@@ -28,6 +28,6 @@ class JpDateInfoEntityTraitTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Model/Entity/Traits/jp_date_info_entity_trait';
+        return '/Model/Entity/Traits/jp_date_info_entity_trait';
     }
 }

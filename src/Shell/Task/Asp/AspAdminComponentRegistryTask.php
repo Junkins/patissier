@@ -29,6 +29,6 @@ class AspAdminComponentRegistryTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Controller/admin_component_registry';
+        return '/Controller/admin_component_registry';
     }
 }

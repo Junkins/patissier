@@ -29,6 +29,6 @@ class AspAdminHelperRegistryTask extends CoreBakeTask
 
     public function template()
     {
-        return 'View/admin_helper_registry';
+        return '/View/admin_helper_registry';
     }
 }

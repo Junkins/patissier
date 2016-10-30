@@ -28,6 +28,6 @@ class PluginConfigTask extends CoreBakeTask
 
     public function template()
     {
-        return 'config/plugin_config';
+        return '/config/plugin_config';
     }
 }

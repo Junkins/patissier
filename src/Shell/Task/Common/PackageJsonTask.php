@@ -28,6 +28,6 @@ class PackageJsonTask extends CoreBakeTask
 
     public function template()
     {
-        return 'package_json';
+        return '/package_json';
     }
 }

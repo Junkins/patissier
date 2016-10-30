@@ -29,6 +29,6 @@ class AspAdminTopsControllerTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Controller/top_controller';
+        return '/Controller/top_controller';
     }
 }

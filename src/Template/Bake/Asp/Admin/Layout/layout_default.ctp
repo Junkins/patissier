@@ -19,6 +19,7 @@
         <?= $this->Html->css('../bower_components/admin-lte/plugins/datepicker/datepicker3.css'); ?>
         <?= $this->Html->css('../bower_components/admin-lte/plugins/timepicker/bootstrap-timepicker.min.css'); ?>
         <?= $this->Html->css('../bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css'); ?>
+        <?= $this->Html->css('admin/common.css'); ?>
         <?= $this->fetch('css') ?>
 
         <?= $this->Html->script('../bower_components/moment/min/moment.min'); ?>

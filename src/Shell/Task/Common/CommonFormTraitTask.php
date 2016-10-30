@@ -28,6 +28,6 @@ class CommonFormTraitTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Form/Traits/common_form_trait';
+        return '/Form/Traits/common_form_trait';
     }
 }

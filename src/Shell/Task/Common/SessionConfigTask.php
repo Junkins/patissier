@@ -28,6 +28,6 @@ class SessionConfigTask extends CoreBakeTask
 
     public function template()
     {
-        return 'config/session_config';
+        return '/config/session_config';
     }
 }

@@ -29,6 +29,6 @@ class AspAdminExceptionRendererTask extends CoreBakeTask
 
     public function template()
     {
-        return 'Error/exception_renderer';
+        return '/Error/exception_renderer';
     }
 }
