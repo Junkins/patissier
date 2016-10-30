@@ -33,7 +33,7 @@ if (!isset($fields) || $fields !== false) {
 }
 %>
 <?php
-namespace <%= $namespace %>\Model\Admin\Entit;
+namespace <%= $namespace %>\Model\Admin\Entity;
 
 use App\Model\Common\Entity\<%= $name %> as Common<%= $name %>;
 
@@ -50,7 +50,7 @@ use App\Model\Common\Entity\<%= $name %> as Common<%= $name %>;
 <% endforeach; %>
 <% endif; %>
  */
-class <%= $name %> extends Common<%= $name %>;
+class <%= $name %> extends Common<%= $name %>
 {
     /**
      * __get

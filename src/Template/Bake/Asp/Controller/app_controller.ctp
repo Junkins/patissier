@@ -1,12 +1,12 @@
 <?php
 namespace <%= $namespace %>\Controller;
 
-use App\Controller\ComponentRegistry;
 use <%= $namespace %>\Controller\AppController;
+use Cake\Controller\Controller;
 use Cake\Event\Event;
 use Cake\Routing\Router;
 
-abstract class AppController extends AppController
+abstract class AppController extends Controller
 {
     /**
      * initialize
@@ -15,9 +15,7 @@ abstract class AppController extends AppController
     public function initialize()
     {
         parent::initialize();
-        $this->viewBuilder()->className('App\View\AdminView');
         // 認証用のコンポーネントの読み込み
-        // $this->loadComponent('AdminAuth');
     }
 
     /**
@@ -36,5 +34,7 @@ abstract class AppController extends AppController
     public function beforeRender(Event $event)
     {
         parent::beforeRender($event);
+        $modelClassName = $this->name;
+        $this->set(compact('modelClassName'));
     }
 }

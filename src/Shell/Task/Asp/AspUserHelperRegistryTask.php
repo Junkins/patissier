@@ -13,13 +13,13 @@ class AspUserHelperRegistryTask extends CoreBakeTask
      */
     public function main($name = null)
     {
-        $name = 'admin_helper_registry';
+        $name = 'user_helper_registry';
         parent::main($name);
     }
 
     public function name()
     {
-        return 'admin_helper_registry';
+        return 'user_helper_registry';
     }
 
     public function fileName($name)
@@ -29,6 +29,6 @@ class AspUserHelperRegistryTask extends CoreBakeTask
 
     public function template()
     {
-        return '/View/admin_helper_registry';
+        return '/View/user_helper_registry';
     }
 }
